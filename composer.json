@@ -1,0 +1,21 @@
+{
+    "name": "xvengine/button-bundle",
+    "description": "Button Bundle",
+	"type" : "xvengine-bundle",
+    "authors": [
+        {
+            "name": "Krzysztof Bednarczyk",
+            "email": "admin@bordeux.net",
+            "homepage": "http://bednarczyk.me"
+        }
+    ],
+    "require": {
+		"xvengine/core": "1.*",
+	},
+    "autoload": {
+        "psr-0": {
+            "XVEngine\\Bundle\\ButtonBundle" : ""
+        }
+    },
+	"target-dir": "XVEngine/Bundle/ButtonBundle"
+}
