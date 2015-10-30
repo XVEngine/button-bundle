@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-		"xvengine/core": "1.*",
+		"xvengine/core": "1.*"
 	},
     "autoload": {
         "psr-0": {
