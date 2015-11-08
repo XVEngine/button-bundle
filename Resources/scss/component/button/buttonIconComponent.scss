@@ -1,21 +1,22 @@
 a.btn-icon {
+  $size : 40px;
+
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   color: #FFF;
   font-size: 20px;
   text-align: center;
   transition: color 0.3s ease;
 
-  &:hover , &.active {
+  &:hover, &.active {
     color: $main-color2;
   }
 
   > i {
-    &:before{
-      line-height: 25px !important;
+    &:before {
+      line-height: $size !important;
     }
   }
-
 
 }

@@ -108,7 +108,7 @@
      * @returns {namespace.buttonIconComponent}
      */
     namespace.buttonIconComponent.prototype.toggleActive = function() {
-        this.setActive(this.isActive() ? false : true);
+        this.setActive(!this.isActive());
         return this;
     };
 

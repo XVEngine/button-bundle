@@ -10,7 +10,7 @@
 
     namespace.buttonComponent = app.newClass({
         extend: function () {
-            return app.components.abstractComponent;
+            return app.core.component.abstractComponent;
         }
     });
     
@@ -25,9 +25,7 @@
         var tmplString = app.utils.getString(function() {
             //@formatter:off
             /**<string>
-                    <a href="#" target="_blank" class="btn">
-                    
-                    </a>
+                    <a href="#" target="_blank" class="btn"></a>
              </string>*/
             //@formatter:on
         });
@@ -62,12 +60,8 @@
         this.initEvents();
     };
     
-    
-    /**
-     * 
-     * @param {Bollean} disable
-     * @returns {_L8.namespace.buttonWithConfirmController.prototype}
-     */
+
+
     namespace.buttonComponent.prototype.disable = function(disable) {
         this.$element[disable ? 'addClass' : 'removeClass']("disabled");
         this.trigger(disable ? 'onDisable' : 'onEnable');
